@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printCalculator() {
+            let n = prompt("Nhập vào số lượng n", 1); 
+            if(n < 1) {
+                console.log("n >= 1");
+                return;
+            }
+        
+            let i = 1; j = 2;
+            let count = 0;
+            let a = [];
+            while(i <= n){
+                if(n % i === 0) {
+                    count++
+                }
+                i ++;
+            }
+            
+            while(n > 1){
+                if(n % j === 0) {
+                    n = n/j
+                    a.push(j)
+                } else {
+                  j ++;
+                }
+            }
+        
+            console.log(a.join("*"))
+            console.log(count)
+        }
+        
+        printCalculator();
+    </script>
+</body>
+</html>

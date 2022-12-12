@@ -1,0 +1,26 @@
+
+.div__BANDWIDTH{
+    display: flex;
+    height: 100px ;
+}
+.text{
+    background-color: rgb(129, 6, 6);
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numer{
+    background-color: aliceblue;
+    color: white;
+    flex: 0.7;
+    display: flex;
+}
+.percent{
+    background-color: red;
+    display: flex;
+    flex: 0.20;
+    align-items: center;
+    padding-left: 20px;
+}

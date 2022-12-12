@@ -1,0 +1,13 @@
+
+.content{
+    display: flex;
+    justify-content: center;
+    border: 1px  solid black;
+    
+}
+.image {
+    padding: 30px;
+}   
+.information{
+    padding-top: 20px; 
+}

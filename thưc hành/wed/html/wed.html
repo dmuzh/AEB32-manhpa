@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div__res"></div>
+    <input type="button" onclick="confirmdalete()" name="delete" value="delete">
+    <button
+    id="btn__like" 
+    onclick="hendleonclick()" >like</button>
+    
+    
+  <script>
+    function hendleonclick(){
+        let elm = document.getElementById('div__res') // jsdom-> get elm by id
+        elm.innerHTML = '<span> like ok</span>'
+        elm.style.background= "white"
+        
+        console.log(elm);
+       
+    }
+
+
+    //event handling
+    function confirmdalete(){
+       let name= confirm('adasdasd');
+        alert('you'+name);
+    }
+
+    function getUser(){
+        let user = {
+            name:"ok",
+            age: "12"
+        }
+        console.log(user);
+        return user
+    }
+    let res = getUser()
+    console.log(res);
+
+    function getUserParam(_user){
+        console.log(_user)
+    }
+    getUserParam({name:"aaa",age:20})
+    sw
+
+  </script>
+    
+    <script src="../javascript/testbien.js"></script>
+</body>
+</html>
